@@ -9,6 +9,8 @@ Please click "code" and then download the zip.
 Open the zip file with a folder, then you may use the files inside the folder for execution.
 Please use the following Makefile command:
 g++ -pedantic-errors -std=c++11 main.cpp save_status.cpp -o game
+## 1.2 Demonstration Video
+https://connecthkuhk-my.sharepoint.com/:f:/g/personal/u3594734_connect_hku_hk/EkeFy9qVG4ROj3s_GRUMhsABUL2GPssrC7HSGoKtn-_lgA?e=b7GxOh
 
 # 2. Introduction
 # 2.1 Game Introduction
