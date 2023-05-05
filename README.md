@@ -59,6 +59,7 @@ In the structure, we use dynamic memory to access and change the current status 
 (2) In the start of each game, the player may choose to load the archived game status or start a new game. If loading existing data has been chosen, the program will input the information inside "game_status.txt" (if exists), then the game continues by the game status stored last time when the player decides to exit the game.
 ## 3.5 Program codes in multiple files
 Since most procedures in the game involve directly changing the global variable "player" and "computer" in the structure "Condition", and that the sections in the main file has been clearly divided, we have used a different file to store the function for saving the current game status.
+Another "game_status.txt" file is used so that when the player enter the game without any existing data and select the option "load data", so that we generate the initial conditions inside this text file first and the game would continue as usual. When further a loading decision has been made this file will be overwritten.
 ## 3.6  Proper indentation and naming styles
 1. For most of the variables, we have used names that are easy to read (i.e. player.health, player.armor,player.cardnum,...), apart from some of the trivial and temporary variables (i.e. temp, pc, ...) that are used to stored some date and be referenced shortly after declaration.
 2. The functions defined by the names of the cards (i.e. heal(int input), truce(),...) are for activating thier fuctionalities whenever the card has been used.
