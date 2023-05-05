@@ -731,13 +731,6 @@ void computer_round(){
     while (computer.health < player.health && count_truce > 0){
         usecard1(9);
         count_truce -= 1;
-        if (player.health == 5){
-            computer.health += 1;
-        }
-        else{
-            computer.health += 1;
-            player.health += 1;
-        }
     }
     while (count_plunder > 0 && player.armor != 13){
         usecard1(5);
