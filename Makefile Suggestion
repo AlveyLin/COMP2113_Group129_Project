@@ -1,0 +1,4 @@
+You may use the following command after downloading the file and putting it in one folder.
+(you may first use "cd" to go to the folder)
+g++ -pedantic-errors -std=c++11 game.cpp save_status.cpp -o game
+./game
