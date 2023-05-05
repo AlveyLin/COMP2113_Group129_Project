@@ -820,6 +820,14 @@ int main(){
             cout << "Error in lodaing data, please make sure that you have successfully saved game status last time when exiting again." << endl;
         }
         else{
+            int countline, sum = 0;
+            while (fin >> countline){
+                sum += countline;
+            }
+            if (sum == 0){
+                cout << "There is no available data, please quit the game and try again." << endl;
+            }
+            else{
             int ph, pa, pw, ch, ca, cw;
             int p[10], c[10];
             fin >> ph;
@@ -864,6 +872,7 @@ int main(){
         generate_computer_card();
         generate_computer_card();
         computer_round();
+        }
     }
     else if (input == 0){ // Starting a new game
         player.health = 5;
