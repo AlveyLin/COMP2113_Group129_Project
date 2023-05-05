@@ -7,6 +7,8 @@
 ## 1.1 Execution Instruction:
 Please click "code" and then download the zip.  
 Open the zip file with a folder, then you may use the files inside the folder for execution.
+Please use the following Makefile command:
+g++ -pedantic-errors -std=c++11 main.cpp save_status.cpp -o game
 
 # 2. Introduction
 # 2.1 Game Introduction
@@ -56,8 +58,8 @@ In the structure, we use dynamic memory to access and change the current status 
 (1) Current game status will be output to a file called "game_status.txt" once the player decides to quit the game.
 (2) In the start of each game, the player may choose to load the archived game status or start a new game. If loading existing data has been chosen, the program will input the information inside "game_status.txt" (if exists), then the game continues by the game status stored last time when the player decides to exit the game.
 ## 3.5 Program codes in multiple files
-
-## 2.6  Proper indentation and naming styles
+Since most procedures in the game involve directly changing the global variable "player" and "computer" in the structure "Condition", and that the sections in the main file has been clearly divided, we have used a different file to store the function for saving the current game status.
+## 3.6  Proper indentation and naming styles
 1. For most of the variables, we have used names that are easy to read (i.e. player.health, player.armor,player.cardnum,...), apart from some of the trivial and temporary variables (i.e. temp, pc, ...) that are used to stored some date and be referenced shortly after declaration.
 2. The functions defined by the names of the cards (i.e. heal(int input), truce(),...) are for activating thier fuctionalities whenever the card has been used.
 3. The "Show()" and "Display" functions are used to show on the screen whenever a card has been used (either by the computer or the player) or at the start of each round for the player to make decisions according to the current game status.
@@ -69,4 +71,8 @@ In the structure, we use dynamic memory to access and change the current status 
 Comments are given in the code for referencing the usage of the command.
 
 # 4 HEAD FILES INCLUDE
+<iostream>
+<fstream>
+<cstdlib>
+"save_status.h"
 
