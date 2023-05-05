@@ -28,31 +28,19 @@ In general, there are three types of cards,
 
 Here are the usage of each card:
    TYPE          Name                      Description
- [ Ability ]    【 Attack 】       In attempt to cost 1 damage.
- 
- [ Ability ]    【 Dodge 】        In reponse to avoid 1 【 Attack 】.
- 
- [ Ability ]    【 Heal 】         Gain 1 health, maximum health is 5.
- 
- [ Ability ]    【 Demolish 】     Destroy/Discard one of the opponent's cards.
- 
- [ Ability ]    【 Plunder 】      Take one card from opponent's cards and turn it into an avable card for use.
- 
- [ Ability ]    【 Invade 】       The opponent must use【Attack】in response, otherwise cost 1 damage.
- 
- [ Ability ]    【 Rainfire 】     Cost 1 unavoidable damage, but can only be avoided if the opponent has put on【 Matrix 】.
- 
- [ Ability ]    【 Duel 】         The one who has fewer【 Attack 】cards loses and receives 1 damage.
- 
- [ Ability ]    【 Truce 】        Everyone's health increases by 1, maximum health is 5.
- 
- [ Weapon ]     【 Rifle 】        Inacvtive the opponent's armor.
- 
- [ Weapon ]     【 Casper 】       Every【 Attack 】will cost 2 damage, but can still be avoided by 1 【 Dodge 】.
- 
- [ Armor ]      【 Matrix 】       Immune to【 Rainfire】and【 Invade 】.
- 
- [ Armor ]      【 Shield 】       Immune to【 Demolish】.
+1.  [ Ability ]    【 Attack 】       In attempt to cost 1 damage. 
+2.  [ Ability ]    【 Dodge 】        In reponse to avoid 1 【 Attack 】.
+3.  [ Ability ]    【 Heal 】         Gain 1 health, maximum health is 5.
+4.  [ Ability ]    【 Demolish 】     Destroy/Discard one of the opponent's cards. 
+5.  [ Ability ]    【 Plunder 】      Take one card from opponent's cards and turn it into an avable card for use.
+6.  [ Ability ]    【 Invade 】       The opponent must use【Attack】in response, otherwise cost 1 damage.
+7.  [ Ability ]    【 Rainfire 】     Cost 1 unavoidable damage, but can only be avoided if the opponent has put on【 Matrix 】.
+8.  [ Ability ]    【 Duel 】         The one who has fewer【 Attack 】cards loses and receives 1 damage.
+9.  [ Ability ]    【 Truce 】        Everyone's health increases by 1, maximum health is 5.
+10. [ Weapon ]     【 Rifle 】        Inacvtive the opponent's armor.
+11. [ Weapon ]     【 Casper 】       Every【 Attack 】will cost 2 damage, but can still be avoided by 1 【 Dodge 】.
+12. [ Armor ]      【 Matrix 】       Immune to【 Rainfire】and【 Invade 】.
+13. [ Armor ]      【 Shield 】       Immune to【 Demolish】.
  
  
 
