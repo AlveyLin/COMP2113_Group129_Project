@@ -1,6 +1,6 @@
 # COMP-2113-Course-Project
 # COMP-2113-group129
-## Group members:  
+## Group members:
 Name: Chaoyi   UID: 3035845136
 Name: Lin Qianli  UID: 3035947348
 # 1. General information  
