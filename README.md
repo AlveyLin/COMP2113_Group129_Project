@@ -48,9 +48,13 @@ Here is the usage of each card:
 # 2.4 Generation of Random Piles of Cards
 One thing to notice is that the <cstdlib> in C++ sometimes might generate the same random data in different new games. Even though we have endeavoured to add one feature which is to ask the player to randomly choose a card pile for the game, in some terminals the card generated in another new game might still be the same. However, there is one easy way to make amendments to this.
    In line 31, one may change the data by only a little, for instance, add one number "1" to the array. i.e.
+   
    int stack_1[] = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,9,10,10,11,11,12,12,13,13,1}; //1 is added to the end of this array
+   
    Accordingly, change line 49 to:
+   
            return stack_1[1 + rand() % 65];
+   
    Note that similar methods can be applied as long as the number of elements in the array changes. The game goes exactly as usual after the implementation.
  
 # 3. Code Requirement Implementation
