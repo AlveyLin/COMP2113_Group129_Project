@@ -800,13 +800,16 @@ void player_round(){
 }
 
 
-int main(){
+
+int main() {
     // Main function for initialisation and start of the game.
     cout << "Load game or start a new game? Input 1 to load game, input 0 to start new game: ";
     int input;
     cin >> input;
     if (input == 1){// Loading data from existing archive.
-        Condition *p_addr = &player, *c_addr = &computer;
+        Condition *p_addr, *c_addr;
+        p_addr = new Condition; 
+        c_addr = new Condition;
         ifstream fin;
         fin.open("game_status.txt");
         if (fin.fail()){
@@ -830,14 +833,22 @@ int main(){
             (*p_addr).health = ph;
             (*p_addr).armor = pa;
             (*p_addr).weapon = pw;
+            player.health = (*p_addr).health;
+            player.weapon = (*p_addr).weapon;
+            player.armor = (*p_addr).armor;
             for (int i = 0; i < 10; i++){
                 (*p_addr).card[i] = p[i];
+                player.card[i] = (*p_addr).card[i];
             }
             (*c_addr).health = ch;
             (*c_addr).armor = ca;
             (*c_addr).weapon = cw;
+            computer.health = (*c_addr).health;
+            computer.weapon = (*c_addr).weapon;
+            computer.armor = (*c_addr).armor;
             for (int i = 0; i < 10; i++){
                 (*c_addr).card[i] = c[i];
+                computer.card[i] = (*c_addr).card[i];
             }
             cout << player.health << endl;
             cout << player.armor << endl;
@@ -850,14 +861,14 @@ int main(){
             cout << computer.weapon << endl;
             for (int i = 0; i < 10; i++){
                 cout << computer.card[i] << endl;
-        }
+        }}
         fin.close();
         generate_computer_card();
         generate_computer_card();
         generate_computer_card();
         computer_round();
         }
-    }
+
     else if (input == 0){ // Starting a new game
         player.health = 5;
         computer.health = 5;
